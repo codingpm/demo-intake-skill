@@ -106,8 +106,14 @@ Demo Intake Skill 是一个用于补齐原型需求信息的可复用 skill。
 demo-intake-skill/
 ├── SKILL.md
 ├── README.md
-└── agents/
-    └── openai.yaml
+├── HUMAN_GUIDE.md
+├── agents/
+│   └── openai.yaml
+└── references/
+    ├── brief-template.md
+    ├── platform-routing.md
+    ├── publishing-kit.md
+    └── question-strategy.md
 ```
 
 ### 主要文件
@@ -115,8 +121,28 @@ demo-intake-skill/
 - `SKILL.md`
   skill 的核心定义、提问规则、停止条件和 brief 输出格式。
 
+- `README.md`
+  仓库级说明文档。
+
+- `HUMAN_GUIDE.md`
+  面向协作者的人类可读说明文档。
+
 - `agents/openai.yaml`
   skill 平台展示信息和默认提示词配置。
+
+### 参考文件
+
+- `references/question-strategy.md`
+  提问顺序、收口条件和默认值策略。
+
+- `references/brief-template.md`
+  标准化 requirement brief 模板和字段说明。
+
+- `references/platform-routing.md`
+  Web 与 Mobile 的分流规则。
+
+- `references/publishing-kit.md`
+  对外发布文案、卖点和示例 prompt。
 
 ## 这个仓库怎么用
 
